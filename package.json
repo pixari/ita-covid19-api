@@ -1,13 +1,19 @@
 {
-  "name": "pcm-dpc-COVID-19-to-loki",
+  "name": "ita-COVID-19-to-loki",
   "version": "1.0.0",
-  "description": "",
+  "description": "Extract data from the official pcm-dpc/COVID-19 repo and import them in a LokiJS DB. ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "covid19",
+    "italy",
+    "data",
+    "db",
+    "dashboard"
+  ],
+  "author": "Raffaele Pizzari <raffaele.pizzari@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
