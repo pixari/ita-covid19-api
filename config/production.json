@@ -1,0 +1,14 @@
+{
+  "production": {
+    "name": "ITA Covid API - Dev Mode",
+    "port": 5000,
+    "mode": "production",
+    "protocol": "http",
+    "serverUrl": "localhost",
+    "serverUrlWebUrlLink": "ita-covid-api.herokuapp.com",
+    "database": {
+      "file": "covid19.json"
+    },
+    "sourceRepository": "https://github.com/pcm-dpc/COVID-19.git"
+  }
+}

@@ -1,10 +1,12 @@
 {
-  "name": "ita-COVID-19-to-loki",
+  "name": "ita-covid-api",
   "version": "1.0.0",
   "description": "Extract data from the official pcm-dpc/COVID-19 repo and import them in a LokiJS DB. ",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "dev": "NODE_ENV=dev nodemon --inspect=5001 --config nodemon.js src/server.js",
+    "start": "NODE_ENV=production nodemon --inspect=5001 --config nodemon.js src/server.js",
+    "build": "NODE_ENV=production node importer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,9 +19,24 @@
   "author": "Raffaele Pizzari <raffaele.pizzari@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "chalk": "^4.1.0",
+    "config": "^3.3.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-validator": "^6.6.1",
     "lokijs": "^1.5.11",
-    "shelljs": "^0.8.4"
+    "nodemon": "^2.0.6",
+    "shelljs": "^0.8.4",
+    "swagger-jsdoc": "^4.3.1",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2"
   }
 }

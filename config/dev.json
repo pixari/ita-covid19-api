@@ -1,0 +1,14 @@
+{
+  "dev": {
+    "name": "ITA Covid API - Dev Mode",
+    "port": 5000,
+    "mode": "dev",
+    "protocol": "http",
+    "serverUrl": "localhost",
+    "serverUrlWebUrlLink": "http://localhost:5000/v1",
+    "database": {
+      "file": "covid19.json"
+    },
+    "sourceRepository": "https://github.com/pcm-dpc/COVID-19.git"
+  }
+}
