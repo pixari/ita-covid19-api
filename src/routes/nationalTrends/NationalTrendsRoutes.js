@@ -4,7 +4,7 @@
  *    /national-trends/{date}?to={to}:
  *      get:
  *        tags: 
- *          - TrendNazionali
+ *          - Trend nazionali
  *        summary: Trend nazionali.
  *        description: >
  *          Elenco del riassunto giornaliero dei dati nazionali
@@ -16,6 +16,7 @@
  *            description: dal giorno... (ex. 2020-08-10)
  *          - name: to
  *            in: path
+ *            allowEmptyValue: true
  *            required: false
  *            type: string
  *            description: al giorno... (ex. 2020-08-10)

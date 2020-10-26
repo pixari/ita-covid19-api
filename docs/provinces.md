@@ -86,7 +86,7 @@ Elenco dei trend delle province di una regione
 
 ### Specifiche tecniche: 
 
-**URL** : `/v1/provinces/getbyprovince/{codice_regione}/{date}?to={to}`
+**URL** : `/v1/provinces/getbyregion/{codice_regione}/{date}?to={to}`
 
 **Method** : `GET`
 

@@ -23,5 +23,6 @@ module.exports = {
   },
   apis: [
     "./src/routes/nationalTrends/NationalTrendsRoutes.js",
+    "./src/routes/notes/NotesRoutes.js",
   ],
 };
