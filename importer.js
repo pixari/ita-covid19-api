@@ -72,8 +72,7 @@ try {
 /* Note  */
 try {
   const notes = db.addCollection('notes', { indices: ['data'] });
-
-  note.forEach((a) => notes.insert(a));
+  note.forEach((a) => notes.insert({ ...a, timestamp: new Date(a.data).getTime() }));
   echo(c.bold.bgGreen.white('OK! notes has been successfully imported.'));
 } catch (err) {
   echo(c.bold.bgRed.white(`Sorry, an error occurred importing notes: ${err}`));

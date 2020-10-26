@@ -1,4 +1,5 @@
 
+const { prototype } = require('lokijs');
 const db = require('../db');
 const dateToTimestamp = (date) => new Date(date).getTime();
 

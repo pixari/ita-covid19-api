@@ -50,6 +50,7 @@ Gli "open endpoints" non hanno bisogno di autenticazione
 - Trend di una singola provincia
 - Trend delle province di una regione
 - Elenco delle province
+4) [Note](./docs/notes.md)
 
 
 
@@ -92,6 +93,6 @@ I migliori "Bug Report" tendono ad avere:
 - Cosa succede in realtà
 
 <h2>Licenza</h2>
-La licenza originale dei dati è la seguente: [Attribution 4.0 International // Attribuzione 4.0 Internazionale](https://github.com/pcm-dpc/COVID-19/blob/master/LICENSE).
+La licenza originale dei dati è la seguente: [Attribution 4.0 International](https://github.com/pcm-dpc/COVID-19/blob/master/LICENSE).
 <br />
 Anche questo progetto utilizza lo [stesso tipo di licenza](https://creativecommons.org/licenses/by/4.0/legalcode).
