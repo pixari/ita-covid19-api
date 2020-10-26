@@ -15,7 +15,7 @@ const specs = swaggerJsdoc(swaggerOptions);
 const app = express();
 
 app.use(
-  "/",
+  "/docs",
   swaggerUi.serve,
   swaggerUi.setup(specs)
 );

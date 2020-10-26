@@ -4,21 +4,21 @@
  *    /national-trends/{date}?to={to}:
  *      get:
  *        tags: 
- *          - NationalTrends
- *        summary: National trends.
+ *          - TrendNazionali
+ *        summary: Trend nazionali.
  *        description: >
- *          National trends description.
+ *          Elenco del riassunto giornaliero dei dati nazionali
  *        parameters: 
- *          - name: from
+ *          - name: date
  *            in: path
  *            required: true
  *            type: string
- *            description: ex. 2020-08-10
+ *            description: La data minima per filtrare i dati in formato yyyy-mm-dd. (ex. 2020-08-10)
  *          - name: to
  *            in: path
  *            required: false
  *            type: string
- *            description: ex. 2020-10-10
+ *            description: La data massima per filtrare i dati in formato yyyy-mm-dd. (ex. 2020-08-12)
  *        responses:
  *          '200':
  *            description: Successful operation
@@ -29,7 +29,7 @@
  *        externaDocs:
  *          description: Description.
  * 
- * components:
+ * components:  
  *  schemas:
  *    NationalTrend:
  *      type: object
