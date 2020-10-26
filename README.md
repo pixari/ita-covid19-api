@@ -11,9 +11,6 @@
 
 1. [Introduzione](#Introduzione)
 2. [Scopo del progetto](#scopo-del-progetto)
-   1. [Tendenza nazionale](#tendenza-nazionale)
-   2. [Elenco delle regioni](#elenco-delle-regioni)
-   2. [Trend regionali](#trend-regionali)
 3. [Come usarlo](#come-usarlo)
 4. [Contribuire](#contribution)
 5. [Licenza](#Licenza)
@@ -39,8 +36,7 @@ Mi auguro che possano servire ad altri come come base per costruire progetti di 
 
 <h2>Come usarlo</h2>
 
-Il servizio è raggiungibile al seguente indirizzo: 'https://ita-covid-api.herokuapp.com'.
-Questo è un esempio: 'https://ita-covid-api.herokuapp.com/v1/national-trends/2020-10-01'
+Il servizio è raggiungibile al seguente indirizzo: ita-covid-api.herokuapp.com e questo è un esempio: 'https://ita-covid-api.herokuapp.com/v1/national-trends/2020-10-01'
 
 <h3>Open Endpoints</h3>
 
@@ -48,12 +44,12 @@ Gli "open endpoints" non hanno bisogno di autenticazione
 
 1) [Trend nazionali](./docs/nationalTrends.md)
 2) [Regioni](./docs/regions.md)
-   2.1) Trend di una singola regione
-   2.2) Elenco delle regioni
+- Trend di una singola regione
+- Elenco delle regioni
 3) [Province](./docs/provinces.md)
-   3.1) Trend di una singola provincia
-   3.2) Trend delle province di una regione
-   3.3) Elenco delle province
+- Trend di una singola provincia
+- Trend delle province di una regione
+- Elenco delle province
 
 
 
