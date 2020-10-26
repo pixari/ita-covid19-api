@@ -13,12 +13,12 @@
  *            in: path
  *            required: true
  *            type: string
- *            description: La data minima per filtrare i dati in formato yyyy-mm-dd. (ex. 2020-08-10)
+ *            description: dal giorno... (ex. 2020-08-10)
  *          - name: to
  *            in: path
  *            required: false
  *            type: string
- *            description: La data massima per filtrare i dati in formato yyyy-mm-dd. (ex. 2020-08-12)
+ *            description: al giorno... (ex. 2020-08-10)
  *        responses:
  *          '200':
  *            description: Successful operation
@@ -26,13 +26,52 @@
  *              application/json:
  *                schema:
  *                  $ref: '#/components/schemas/NationalTrend'
- *        externaDocs:
- *          description: Description.
  * 
- * components:  
- *  schemas:
- *    NationalTrend:
- *      type: object
+ */
+
+ /**
+ * @swagger
+ *    components:  
+ *      schemas:
+ *        NationalTrend:
+ *          type: object
+ *          properties:
+ *            data:
+ *              type: string
+ *            stato:
+ *              type: string    
+ *            ricoverati_con_sintomi:
+ *              type: integer   
+ *            terapia_intensiva:
+ *              type: integer   
+ *            totale_ospedalizzati:
+ *              type: integer   
+ *            isolamento_domiciliare:
+ *              type: integer   
+ *            totale_positivi:
+ *              type: integer   
+ *            variazione_totale_positivi:
+ *              type: integer   
+ *            nuovi_positivi:
+ *              type: integer   
+ *            dimessi_guariti:
+ *              type: integer  
+ *            deceduti:
+ *              type: integer  
+ *            casi_da_sospetto_diagnostico:
+ *              type: integer  
+ *            casi_da_screening:
+ *              type: integer  
+ *            totale_casi:
+ *              type: integer  
+ *            tamponi:
+ *              type: integer  
+ *            casi_testati:
+ *              type: integer    
+ *            note:
+ *              type: string   
+ *            timestamp:
+ *              type: integer  
  */
 
 
