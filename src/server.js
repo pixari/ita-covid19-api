@@ -14,11 +14,11 @@ swaggerOptions.definition.servers[0].url = config.get(`${mode}.serverUrlWebUrlLi
 const specs = swaggerJsdoc(swaggerOptions);
 const app = express();
 
-/*app.use(
-  "/docs",
+app.use(
+  "/",
   swaggerUi.serve,
   swaggerUi.setup(specs)
-);*/
+);
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -45,6 +45,7 @@ const start = () => (
     console.log(chalk.green(`Port:\t\t${config.get(`${mode}.port`)}`)); //eslint-disable-line
     console.log(chalk.green(`Mode:\t\t${config.get(`${mode}.mode`)}`)); //eslint-disable-line
     console.log(chalk.green(`App version:\t${pack.version}`)); //eslint-disable-line
+    console.log(chalk.green(`Docs url:\t${swaggerOptions.definition.servers[0].url}`)); //eslint-disable-line
     console.log(chalk.green("database connection is established"));
     console.log(chalk.yellow('.......................................')); //eslint-disable-line
   })
