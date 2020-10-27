@@ -1,7 +1,7 @@
 /**
  * @swagger
  *  paths:
- *    /notes/{date}?to={to}:
+ *    /notes/{date}:
  *      get:
  *        tags: 
  *          - Note

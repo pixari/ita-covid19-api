@@ -1,7 +1,7 @@
 /**
  * @swagger
  *  paths:
- *    /national-trends/{date}?to={to}:
+ *    /national-trends/{date}:
  *      get:
  *        tags: 
  *          - Trend nazionali
@@ -15,7 +15,7 @@
  *            type: string
  *            description: dal giorno... (ex. 2020-08-10)
  *          - name: to
- *            in: path
+ *            in: query
  *            allowEmptyValue: true
  *            required: false
  *            type: string

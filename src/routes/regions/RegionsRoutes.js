@@ -4,10 +4,10 @@
  *    /regions/list:
  *      get:
  *        tags: 
- *          - Regions
- *        summary: List of available regions.
+ *          - Elenco delle regioni
+ *        summary: Elenco dei nomi e dei codici delle regioni
  *        description: >
- *          List of all available regions extracted from the latest data.
+ *          L'elenco delle regioni è basato sui dati risponibili
  *        responses:
  *          '200':
  *            description: Successful operation
@@ -15,11 +15,48 @@
  *              application/json:
  *                schema:
  *                  $ref: '#/components/schemas/Region'
- * 
- * components:
- *  schemas:
- *    Region:
- *      type: object
+ *    /regions/getbyregion/{codice_regione}/{date}:
+ *      get:
+ *        tags: 
+ *          - Trend regionali
+ *        summary: Dati di una singola regione
+ *        description: >
+ *          Elenco dei dati di una singola regione filtrati per data
+ *        parameters: 
+ *          - name: codice_regione
+ *            in: path
+ *            required: true
+ *            schema:
+ *              type: integer
+ *              minimum: 1
+ *              maximum: 22
+ *            description: il codice della regione (vedi list)
+ *          - name: date
+ *            in: path
+ *            required: true
+ *            type: string
+ *            description: dal giorno... (ex. 2020-08-10)
+ *        responses:
+ *          '200':
+ *            description: Successful operation
+ *            content: 
+ *              application/json:
+ *                schema:
+ *                  $ref: '#/components/schemas/Region'
+ */
+
+ /**
+ * @swagger
+ *    components:  
+ *      schemas:
+ *        Region:
+ *          type: object
+ *          properties:
+ *            denominazione_regione:
+ *              type: string
+ *            codice_regione:
+ *              type: integer    
+ *         
  */
 
 

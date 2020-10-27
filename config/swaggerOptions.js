@@ -24,5 +24,7 @@ module.exports = {
   apis: [
     "./src/routes/nationalTrends/NationalTrendsRoutes.js",
     "./src/routes/notes/NotesRoutes.js",
+    "./src/routes/regions/RegionsRoutes.js",
+    "./src/routes/provinces/ProvincesRoutes.js",
   ],
 };
