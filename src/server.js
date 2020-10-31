@@ -17,18 +17,14 @@ const app = express();
 app.use(
   "/docs",
   swaggerUi.serve,
-  swaggerUi.setup(specs)
+  swaggerUi.setup(specs, { explorer: true })
 );
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: false
 }));
-app.use(
-  "/api-docs",
-  swaggerUi.serve,
-  swaggerUi.setup(specs, { explorer: true })
-);
+
 require('./routes')(app);
 const dir = path.join(__dirname, 'assets');
 // app.use('/upload', express.static(dir));
