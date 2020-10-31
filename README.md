@@ -36,22 +36,7 @@ Mi auguro che possano servire ad altri come come base per costruire progetti di 
 
 <h2>Come usarlo</h2>
 
-Il servizio è raggiungibile al seguente indirizzo: ita-covid-api.herokuapp.com e questo è un esempio: 'https://ita-covid-api.herokuapp.com/v1/national-trends/2020-10-01'
-
-<h3>Open Endpoints</h3>
-
-Gli "open endpoints" non hanno bisogno di autenticazione
-
-1) [Trend nazionali](./docs/nationalTrends.md)
-2) [Regioni](./docs/regions.md)
-- Trend di una singola regione
-- Elenco delle regioni
-3) [Province](./docs/provinces.md)
-- Trend di una singola provincia
-- Trend delle province di una regione
-- Elenco delle province
-4) [Note](./docs/notes.md)
-
+La documentazione delle API è disponibile qui: https://ita-covid-api.herokuapp.com/docs/
 
 
 
