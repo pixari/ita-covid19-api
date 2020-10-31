@@ -10,7 +10,7 @@ const swaggerOptions = require("../config/swaggerOptions");
 const swaggerUi = require("swagger-ui-express");
 const mode = process.env.NODE_ENV;
 const PORT = process.env.PORT || config.get(`${mode}.port`);
-swaggerOptions.definition.servers[0].url = config.get(`${mode}.serverUrlWebUrlLink`);
+//swaggerOptions.definition.servers[0].url = config.get(`${mode}.serverUrlWebUrlLink`);
 const specs = swaggerJsdoc(swaggerOptions);
 const app = express();
 
