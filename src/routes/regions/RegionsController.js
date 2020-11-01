@@ -7,7 +7,7 @@ module.exports = {
 	list: async (req, res) => {
 		try {
 			const result =  await RegionsServices.list();
-			return res.status(200).json(reqResponse.sucessResponse(200, 'Success', result));
+			return res.status(200).json(result);
 		} catch(err) {
 			res.status(500).json({ error: String(err) })
 		}
@@ -22,7 +22,7 @@ module.exports = {
 		let query = req.query;
 		try {
 			const result =  await RegionsServices.getByRegion(params, query);
-			return res.status(200).json(reqResponse.sucessResponse(200, 'Success', result));
+			return res.status(200).json(result);
 		} catch(err) {
 			res.status(500).json({ error: String(err) })
 		}

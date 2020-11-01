@@ -14,7 +14,7 @@ module.exports = {
 		let query = req.query;
 		try {
 			const result =  await NotesServices.get(params, query);
-			return res.status(200).json(reqResponse.sucessResponse(200, 'Success', result));
+			return res.status(200).json(result);
 		} catch(err) {
 			res.status(500).json({ error: String(err) })
 		}
